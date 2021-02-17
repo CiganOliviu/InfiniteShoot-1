@@ -642,3 +642,14 @@ a:visited {
     color: #fff;
     background-position: 50% 50%;
 }
+
+.login_parallax {
+    height: 60vh;
+    width: 100%;
+    background-image: url("../imgs/parallax_login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-position: 50% 50%;
+}
