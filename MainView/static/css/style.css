@@ -2,7 +2,7 @@
 
 #button-to-top {
   display: inline-block;
-  background-color: #4584b6;
+  background-color: #333333;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -31,7 +31,7 @@
 }
 
 #button-to-top:active {
-  background-color: #4584b6;
+  background-color: #333333;
 }
 
 #button-to-top.show {
@@ -317,7 +317,6 @@ a:visited {
     background-image: url("../imgs/basic_wallpaper_3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     color: #fff;
     background-position: 50% 50%;
 }
@@ -367,7 +366,6 @@ a:visited {
     background-image: url("../imgs/basic_wallpaper2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     color: #fff;
     background-position: 50% 50%;
 }
@@ -417,7 +415,6 @@ a:visited {
     background-image: url("../imgs/basic_wallpaper_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     color: #fff;
     background-position: 50% 50%;
 }
@@ -577,10 +574,10 @@ a:visited {
     opacity: 1; }
 }
 
-.part-parallax {
-    height: 600px;
+.newsletter_parallax {
+    height: 60vh;
     width: 100%;
-    background-image: url("../imgs/paralax_newsletter.jpg");
+    background-image: url("../imgs/parallax_newsletter.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -598,6 +595,50 @@ a:visited {
     font-size: 30px;
 }
 
-.newsletter form {
+.form_div form {
     font-size: 25px;
+}
+
+.form_div form input {
+    width: 50%;
+    padding: 1%;
+}
+
+.form_div form textarea {
+    width: 50%;
+}
+
+.form_div form button {
+    background: #333333;
+    transition: all 500ms ease;
+    font-size: 25px;
+    padding: 1%;
+    border: none;
+    border-radius: 0;
+}
+
+.form_div form button:hover {
+    background: #666666;
+}
+
+@media(max-width: 800px) {
+
+    .form_div form input {
+        width: 100%;
+    }
+
+    .form_div form textarea {
+        width: 100%;
+    }
+}
+
+.contact_parallax {
+    height: 60vh;
+    width: 100%;
+    background-image: url("../imgs/parallax_contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-position: 50% 50%;
 }
