@@ -153,14 +153,14 @@ a:visited {
 .nav-container .nav-row {
     width: 100%;
     margin: 0 auto;
-    padding-right: 25px;
-    padding-top: 25px;
+    padding-right: 50px;
+    padding-top: 50px;
 }
 
 .nav-container .nav-row .nav-logo {
     display: inline-block;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 28px;
     letter-spacing: 0.2em;
 }
 
@@ -169,7 +169,7 @@ a:visited {
 }
 
 .nav-container .nav-row .nav-controls a {
-    padding-left: 20px;
+    padding-left: 25px;
     font-size: 18px;
 }
 

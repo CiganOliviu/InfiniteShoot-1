@@ -1,7 +1,7 @@
 {% extends 'layouts/main_layout.html' %}
 
 {% block content %}
-        <div class="part-parallax">
+        <div class="newsletter_parallax">
 
             <input type="checkbox" id="nav" class="hidden"/>
             <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
@@ -43,4 +43,8 @@
             </div>
         </div>
     </div>
+
+    {% load static %}
+    <script type="text/javascript" language="JavaScript" src="{% static 'js/newsletter-parallax-menu-opacity-on-scroll.js' %}"></script>
+
 {% endblock %}
