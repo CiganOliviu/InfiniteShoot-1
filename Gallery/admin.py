@@ -3,7 +3,7 @@ from .models import ImagesClient, PlatformPresentationImage
 
 
 class PlatformPresentationImageAdmin(admin.ModelAdmin):
-    list_display = ('name', )
+    list_display = ('name', 'column')
 
 
 class ImagesClientAdmin(admin.ModelAdmin):

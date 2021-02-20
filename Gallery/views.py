@@ -6,10 +6,16 @@ from .models import ImagesClient, PlatformPresentationImage
 def gallery_view(request):
     template_name = "gallery/gallery_view.html"
 
-    images_for_platform = PlatformPresentationImage.objects.all()
+    images_for_first_column = PlatformPresentationImage.objects.filter(column="First Column")
+    images_for_second_column = PlatformPresentationImage.objects.filter(column="Second Column")
+    images_for_third_column = PlatformPresentationImage.objects.filter(column="Third Column")
+    images_for_fourth_column = PlatformPresentationImage.objects.filter(column="Fourth Column")
 
     context = {
-        'images_for_platform': images_for_platform
+        'images_for_first_column': images_for_first_column,
+        'images_for_second_column': images_for_second_column,
+        'images_for_third_column': images_for_third_column,
+        'images_for_fourth_column': images_for_fourth_column,
     }
 
     return render(request, template_name, context)
