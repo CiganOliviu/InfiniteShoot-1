@@ -7,7 +7,7 @@ class PlatformPresentationImageAdmin(admin.ModelAdmin):
 
 
 class ImagesClientAdmin(admin.ModelAdmin):
-    list_display = ('client', 'name')
+    list_display = ('client', 'name', 'column')
 
 
 admin.site.register(PlatformPresentationImage, PlatformPresentationImageAdmin)

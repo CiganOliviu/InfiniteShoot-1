@@ -17,12 +17,22 @@
                             </p>
                         </a>
                   </div>
-                  <div class="nav-controls">
-                      <a href="{% url 'blog_view' %}">Blog</a>
-                      <a href="{% url 'contact_view' %}">Contact</a>
-                      <a href="{% url 'gallery_view' %}">Gallery</a>
-                      <a href="{% url 'login' %}">Login</a>
-                  </div>
+                {% if user.is_authenticated %}
+                    <div class="nav-controls">
+                        <a href="{% url 'blog_view' %}">Blog</a>
+                        <a href="{% url 'contact_view' %}">Contact</a>
+                        <a href="{% url 'gallery_view' %}">InfiniteShoot Gallery</a>
+                        <a href="{% url 'personal_gallery_view' %}">Your Gallery</a>
+                        <a href="{% url 'logout' %}">Logout</a>
+                    </div>
+                {% else %}
+                    <div class="nav-controls">
+                        <a href="{% url 'blog_view' %}">Blog</a>
+                        <a href="{% url 'contact_view' %}">Contact</a>
+                        <a href="{% url 'gallery_view' %}">Gallery</a>
+                        <a href="{% url 'login' %}">Login</a>
+                    </div>
+                {% endif %}
             </div>
         </div>
 
