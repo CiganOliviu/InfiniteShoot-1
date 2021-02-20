@@ -657,3 +657,51 @@ a:visited {
     color: #fff;
     background-position: 50% 50%;
 }
+
+.content img {
+  margin-top: 15%;
+}
+
+.content p {
+    margin-top: 20%;
+    text-indent: 5%;
+}
+
+.post {
+    font-size: 18px;
+}
+
+.article-details a {
+    color: #1a1a1a;
+    font-size: 18px;
+}
+
+.search-bar form input {
+    width: 100%;
+    font-size: 30px;
+}
+
+.search-bar form button {
+    color: #ffffff;
+    background: #333333;
+    transition: all 500ms ease;
+    font-size: 25px;
+    padding: 1%;
+    border: none;
+    border-radius: 0;
+}
+
+.search-bar form button:hover {
+    background: #666666;
+}
+
+.blog_parallax {
+        height: 60vh;
+    width: 100%;
+    background-image: url("../imgs/blog_parallax.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-position: 50% 50%;
+}
