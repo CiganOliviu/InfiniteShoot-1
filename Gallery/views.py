@@ -1,6 +1,10 @@
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
+from django.views import generic
+
 from .models import ImagesClient, PlatformPresentationImage
+from Gallery.form import ImageClientForm
 
 
 def gallery_view(request):
@@ -30,7 +34,6 @@ def personal_gallery_view(request):
     images_third_column_client_query = ImagesClient.objects.filter(client=request.user, column="Third Column")
     images_fourth_column_client_query = ImagesClient.objects.filter(client=request.user, column="Fourth Column")
 
-
     context = {
         'images_first_column_client_query': images_first_column_client_query,
         'images_second_column_client_query': images_second_column_client_query,
@@ -39,4 +42,9 @@ def personal_gallery_view(request):
     }
 
     return render(request, template_name, context)
+
+
+
+class ChoosePreferredPhotosView(LoginRequiredMixin, generic.TemplateView):
+    pass
 

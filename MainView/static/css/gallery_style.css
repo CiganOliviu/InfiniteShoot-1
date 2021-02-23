@@ -52,3 +52,8 @@
   margin-top: 8px;
   vertical-align: middle;
 }
+
+.highlight a {
+    font-size: 27px;
+    padding: 2%;
+}
