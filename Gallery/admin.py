@@ -3,11 +3,11 @@ from .models import ImagesClient, PlatformPresentationImage
 
 
 class PlatformPresentationImageAdmin(admin.ModelAdmin):
-    list_display = ('name', )
+    list_display = ('name', 'column')
 
 
 class ImagesClientAdmin(admin.ModelAdmin):
-    list_display = ('client', 'name')
+    list_display = ('client', 'name', 'column')
 
 
 admin.site.register(PlatformPresentationImage, PlatformPresentationImageAdmin)

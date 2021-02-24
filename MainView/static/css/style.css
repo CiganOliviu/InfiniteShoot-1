@@ -330,8 +330,7 @@ a:visited {
 }
 
 .first_parallax .cover-black {
-
-    margin-top: 15%;
+    height: 100vh;
     background: #000000;
     opacity: 0.7;
     padding: 2%;
@@ -339,6 +338,7 @@ a:visited {
 }
 
 .first_parallax .cover-black h1 {
+    margin-top: 15%;
     font-size: 45px;
 }
 
@@ -379,8 +379,7 @@ a:visited {
 }
 
 .second_parallax .cover-black {
-
-    margin-top: 15%;
+    height: 100vh;
     background: #000000;
     opacity: 0.7;
     padding: 2%;
@@ -388,6 +387,7 @@ a:visited {
 }
 
 .second_parallax .cover-black h1 {
+    margin-top: 15%;
     font-size: 45px;
 }
 
@@ -428,8 +428,7 @@ a:visited {
 }
 
 .third-parallax .cover-black {
-
-    margin-top: 15%;
+    height: 100vh;
     background: #000000;
     opacity: 0.7;
     padding: 2%;
@@ -437,6 +436,7 @@ a:visited {
 }
 
 .third-parallax .cover-black h1 {
+    margin-top: 15%;
     font-size: 45px;
 }
 
@@ -591,6 +591,10 @@ a:visited {
     font-size: 60px;
 }
 
+.part-parallax-introduction h1 {
+    font-size: 55px;
+}
+
 .newsletter a {
     font-size: 30px;
 }
@@ -641,4 +645,68 @@ a:visited {
     background-attachment: fixed;
     color: #fff;
     background-position: 50% 50%;
+}
+
+.login_parallax {
+    height: 60vh;
+    width: 100%;
+    background-image: url("../imgs/parallax_login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-position: 50% 50%;
+}
+
+.content img {
+  margin-top: 15%;
+}
+
+.content p {
+    margin-top: 20%;
+    text-indent: 5%;
+}
+
+.post {
+    font-size: 18px;
+}
+
+.article-details a {
+    color: #1a1a1a;
+    font-size: 18px;
+}
+
+.search-bar form input {
+    width: 100%;
+    font-size: 30px;
+}
+
+.search-bar form button {
+    color: #ffffff;
+    background: #333333;
+    transition: all 500ms ease;
+    font-size: 25px;
+    padding: 1%;
+    border: none;
+    border-radius: 0;
+}
+
+.search-bar form button:hover {
+    background: #666666;
+}
+
+.blog_parallax {
+        height: 60vh;
+    width: 100%;
+    background-image: url("../imgs/blog_parallax.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-position: 50% 50%;
+}
+
+.blog-content p {
+
+    font-size: 18px;
 }

@@ -7,6 +7,7 @@ from . import views
 urlpatterns = [
     path('gallery/', views.gallery_view, name='gallery_view'),
     path('personal-gallery/', views.personal_gallery_view, name='personal_gallery_view'),
+    path('choose-preferred-photos/', views.ChoosePreferredPhotosView.as_view(), name='choose_preferred_photos')
 ]
 
 if settings.DEBUG:

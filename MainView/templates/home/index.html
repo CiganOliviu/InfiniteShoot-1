@@ -17,12 +17,23 @@
                             </p>
                         </a>
                   </div>
-                  <div class="nav-controls">
-                      <a href="{% url 'blog_view' %}">Blog</a>
-                      <a href="{% url 'contact_view' %}">Contact</a>
-                      <a href="{% url 'gallery_view' %}">Gallery</a>
-                      <a href="{% url 'login' %}">Login</a>
-                  </div>
+                {% if user.is_authenticated %}
+                    <div class="nav-controls">
+                        <a href="{% url 'blog_view' %}">Blog</a>
+                        <a href="{% url 'contact_view' %}">Contact</a>
+                        <a href="{% url 'gallery_view' %}">InfiniteShoot Gallery</a>
+                        <a href="{% url 'personal_gallery_view' %}">Your Gallery</a>
+                        <a href="{% url 'password_change' %}">Change your password</a>
+                        <a href="{% url 'logout' %}">Logout</a>
+                    </div>
+                {% else %}
+                    <div class="nav-controls">
+                        <a href="{% url 'blog_view' %}">Blog</a>
+                        <a href="{% url 'contact_view' %}">Contact</a>
+                        <a href="{% url 'gallery_view' %}">Gallery</a>
+                        <a href="{% url 'login' %}">Login</a>
+                    </div>
+                {% endif %}
             </div>
         </div>
 
@@ -66,9 +77,9 @@
     <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
 
     <div class="first_parallax">
-        <div class="container-fluid">
-            <div class="col-lg-12">
-                <div class="cover-black">
+        <div class="cover-black">
+            <div class="container-fluid">
+                <div class="col-lg-12">
                     <h1> THE STUDIOS </h1>
                     <div>&nbsp;</div>
                     <h3> AM CREAT CELE MAI FRUMOASE STUDIO-URI TEMATICE, CU DESIGN SUPERB, SPECIAL GANDITE PENTRU FOTOGRAFIILE DE ABSOLVIRE,</h3>
@@ -83,9 +94,9 @@
     </div>
 
     <div class="second_parallax">
-        <div class="container-fluid">
-            <div class="col-lg-12">
-                <div class="cover-black">
+        <div class="cover-black">
+            <div class="container-fluid">
+                <div class="col-lg-12">
                     <h1> THE ALBUM </h1>
                     <div>&nbsp;</div>
                     <h3> MERITI MAI MULT DECAT UN SIMPLU ALBUM DE ABSOLVIRE, ASA CA AM CREAT UN NOU CONCEPT CU PANA LA 60 FOTOGRAFII PERSONALE, IN CARE SA AI </h3>
@@ -100,9 +111,9 @@
     </div>
 
     <div class="third-parallax">
-        <div class="container-fluid">
-            <div class="col-lg-12">
-                <div class="cover-black">
+        <div class="cover-black">
+            <div class="container-fluid">
+                <div class="col-lg-12">
                     <h1> THE APP </h1>
                     <div>&nbsp;</div>
                     <h3> TOATE FOTOGRAFIILE TALE SUNT ACUM MEREU PE SMARTPHONE-UL TAU! AM CREAT PENTRU VOI THE DRAGONS APP: APLICATIA IN CARE ITI CONFIGUREZI </h3>

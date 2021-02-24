@@ -21,8 +21,12 @@ def blog_posts_search_view(request):
     template_name = 'blog/blog_view_results.html'
 
     query = request.GET.get('q')
+    results = ""
 
-    results = query and get_data_from_post(query) or redirect('/blog')
+    if query:
+        results = get_data_from_post(query)
+    else:
+        redirect('/blog')
 
     context = {
         'results': results,
