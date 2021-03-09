@@ -23,6 +23,7 @@
                         <a href="{% url 'contact_view' %}">Contact</a>
                         <a href="{% url 'gallery_view' %}">InfiniteShoot Gallery</a>
                         <a href="{% url 'personal_gallery_view' %}">Your Gallery</a>
+                        <a href="{% url 'appointment_view' %}">Set your Photo shoot</a>
                         <a href="{% url 'password_change' %}">Change your password</a>
                         <a href="{% url 'logout' %}">Logout</a>
                     </div>
@@ -31,6 +32,7 @@
                         <a href="{% url 'blog_view' %}">Blog</a>
                         <a href="{% url 'contact_view' %}">Contact</a>
                         <a href="{% url 'gallery_view' %}">Gallery</a>
+                        <a href="{% url 'appointment_view' %}">Set your Photo shoot</a>
                         <a href="{% url 'login' %}">Login</a>
                     </div>
                 {% endif %}
@@ -159,6 +161,4 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript" language="JavaScript" src="{% static 'js/first-container-menu-opacity-on-scroll.js' %}"></script>
 {% endblock %}

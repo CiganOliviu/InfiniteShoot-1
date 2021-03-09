@@ -1,7 +1,7 @@
 {% extends 'layouts/main_layout.html' %}
 
 {% block content %}
-    <div class="blog_parallax">
+    <div class="default_parallax" style="background-image: url('/MEDIA/wallpapers/blog_parallax.jpg');">
 
         <input type="checkbox" id="nav" class="hidden"/>
         <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
@@ -22,6 +22,7 @@
                     <a href="{% url 'contact_view' %}">Contact</a>
                     <a href="{% url 'gallery_view' %}">InfiniteShoot Gallery</a>
                     <a href="{% url 'personal_gallery_view' %}">Your Gallery</a>
+                    <a href="{% url 'appointment_view' %}">Set your Photo shoot</a>
                     <a href="{% url 'password_change' %}">Change your password</a>
                     <a href="{% url 'logout' %}">Logout</a>
                 </div>
@@ -30,6 +31,7 @@
                     <a href="{% url 'blog_view' %}">Blog</a>
                     <a href="{% url 'contact_view' %}">Contact</a>
                     <a href="{% url 'gallery_view' %}">Gallery</a>
+                    <a href="{% url 'appointment_view' %}">Set your Photo shoot</a>
                     <a href="{% url 'login' %}">Login</a>
                 </div>
             {% endif %}
@@ -91,6 +93,6 @@
     <div>&nbsp;</div>
 
     {% load static %}
-    <script type="text/javascript" language="JavaScript" src="{% static 'js/blog-parallax-menu-opacity-on-scroll.js' %}"></script>
+    <script type="text/javascript" lang="JavaScript" src="{% static 'js/default-parallax-menu-opacity-on-scroll.js' %}"></script>
 
 {% endblock %}

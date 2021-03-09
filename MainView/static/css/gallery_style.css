@@ -1,5 +1,5 @@
 .parallax_gallery {
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     background-image: url("../imgs/parallax_gallery.jpg");
     background-repeat: no-repeat;
@@ -48,12 +48,54 @@
 }
 
 .column img {
-  width: 100%;
-  margin-top: 8px;
-  vertical-align: middle;
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.column .picked_image_style {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+    transition: all 300ms ease;
+}
+
+.column .picked_image_style:hover {
+    opacity: 0.5;
 }
 
 .highlight a {
     font-size: 27px;
     padding: 2%;
+}
+
+.detail_image img {
+    width: 80%;
+}
+
+.our-thoughts h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.our-thoughts p {
+    font-size: 18px;
+}
+
+.empty_parallax_setup {
+    height: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-position: 50% 50%;
+}
+
+.catalogue img {
+    width: 30%;
+}
+
+.content_catalogue img {
+    width: 100%
 }

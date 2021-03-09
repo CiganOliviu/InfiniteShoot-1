@@ -1,44 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
 
-#button-to-top {
-  display: inline-block;
-  background-color: #333333;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  visibility: hidden;
-  z-index: 1000;
-}
-
-#button-to-top::after {
-  content: "";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-
-#button-to-top:hover {
-  cursor: pointer;
-  background-color: #000000;
-}
-
-#button-to-top:active {
-  background-color: #333333;
-}
-
-#button-to-top.show {
-  opacity: 0.7;
-  visibility: visible;
-}
-
 html,
 body {
     height: 100%;
@@ -147,6 +108,12 @@ a:visited {
 .nav-container.solid-nav {
     background-color: #000000;
     opacity: 0.7;
+    transition: background-color 0.2s linear;
+}
+
+.nav-container.hundred-solid-nav {
+    background-color: #000000;
+    opacity: 0.9;
     transition: background-color 0.2s linear;
 }
 
@@ -574,17 +541,6 @@ a:visited {
     opacity: 1; }
 }
 
-.newsletter_parallax {
-    height: 60vh;
-    width: 100%;
-    background-image: url("../imgs/parallax_newsletter.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff;
-    background-position: 50% 50%;
-}
-
 .part-parallax-introduction {
     margin-top: 22%;
     color: #ffffff;
@@ -636,21 +592,9 @@ a:visited {
     }
 }
 
-.contact_parallax {
-    height: 60vh;
+.default_parallax {
+    height: 70vh;
     width: 100%;
-    background-image: url("../imgs/parallax_contact.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff;
-    background-position: 50% 50%;
-}
-
-.login_parallax {
-    height: 60vh;
-    width: 100%;
-    background-image: url("../imgs/parallax_login.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -695,18 +639,12 @@ a:visited {
     background: #666666;
 }
 
-.blog_parallax {
-        height: 60vh;
-    width: 100%;
-    background-image: url("../imgs/blog_parallax.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff;
-    background-position: 50% 50%;
-}
-
 .blog-content p {
 
     font-size: 18px;
+}
+
+.padding {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
